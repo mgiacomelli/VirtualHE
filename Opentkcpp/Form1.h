@@ -235,14 +235,14 @@ namespace Opentkcpp {
 					 "			gl_FragColor.g = k.g*(exp(-2.5*texture2D(texture, texture_coordinate.xy).r*1.000)-0.0821)*1.0894;" +
 					 "			gl_FragColor.b = k.b*(exp(-2.5*texture2D(texture, texture_coordinate.xy).r*0.300)-0.0821)*1.0894;" +
 					 "			break;" +
-					 //Tao 
+					 //Tao, Y. K. Assessment of breast pathologies using nonlinear microscopy. PNAS 2014 111 (43) 15304-15309.
 					 "		case 2:"+
 					 "			float scale = 5.076/4*.7;" +
 					 "			gl_FragColor.r = 0.9 - texture2D(texture, texture_coordinate.xy).r*1.0*scale      - 0.5* texture2D(texture, texture_coordinate.xy).g*scale;" +
 					 "			gl_FragColor.g = 1.1 - sqrt(texture2D(texture, texture_coordinate.xy).r*1.33*scale + 1.25 * texture2D(texture, texture_coordinate.xy).g*scale) ;" +
 					 "			gl_FragColor.b = 0.9 - texture2D(texture, texture_coordinate.xy).r*0.5*scale      -texture2D(texture, texture_coordinate.xy).g*scale;" +
 					 "			break;" +
-					 //Gareau
+					 //Eqn 1, Gareau, D. S. (2009). The feasibility of digitally stained multimodal confocal mosaics to simulate histopathology. Journal of Biomedical Optics, 14(3), 034050. 
 					 "		case 3:"+
 					 "			gl_FragColor.r = 1.0 - texture2D(texture, texture_coordinate.xy).r*(1.0-0.3) - texture2D(texture, texture_coordinate.xy).g*(1.0-1.00);" +
 					 "			gl_FragColor.g = 1.0 - texture2D(texture, texture_coordinate.xy).r*(1.0-0.2) - texture2D(texture, texture_coordinate.xy).g*(1.0-0.55);" +
