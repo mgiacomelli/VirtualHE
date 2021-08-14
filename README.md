@@ -4,7 +4,11 @@ Virtual H&E GPU accelerated code implementing various algorithms demonstrated in
 
 The above code is available in compiled form here:
 
-http://web.mit.edu/mgg6/www/compiled_opengl_code.zip
+https://github.com/mgiacomelli/VirtualHE/blob/master/compiled_opengl_code.zip
+
+and a simple (non-OpenGL accelerated) matlab example here:
+
+https://github.com/mgiacomelli/VirtualHE/blob/master/MatlabExample.zip
 
 A manuscript on describing these methods is available here:
 
